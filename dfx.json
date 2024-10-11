@@ -5,12 +5,11 @@
       "type": "motoko"
     },
     "poll_frontend": {
-      "dependencies": [
-        "poll_backend"
-      ],
-      "source": [
-        "src/poll_frontend/assets"
-      ],
+      "dependencies": ["poll_backend"],
+      "frontend": {
+        "entrypoint": "src/poll_frontend/src/index.html"
+      },
+      "source": ["src/poll_frontend/assets", "dist/poll_frontend/"],
       "type": "assets"
     }
   },
